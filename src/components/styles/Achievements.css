@@ -1,0 +1,99 @@
+.achievements-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  position: relative;
+  opacity: 1;
+  height: auto;
+  margin: auto;
+  margin-bottom: 100px;
+  padding: 60px 0px;
+}
+
+.achievements-section h2 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 400;
+  text-align: center;
+  background: linear-gradient(0deg, #0d9488, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-top: 50px;
+  margin-bottom: 90px;
+}
+
+.achievements-section h2 > span {
+  font-family: "Geist", sans-serif;
+  font-weight: 300;
+}
+
+.achievements-container {
+  width: 100%;
+  max-width: 1200px;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.achievement-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.05);
+  border-color: var(--accentColor);
+}
+
+.achievement-card h3 {
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  font-weight: 500;
+  color: #fff;
+}
+
+.achievement-card p {
+  font-size: 18px;
+  margin: 0;
+  color: #a5f3fc;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1025px) {
+  .achievements-section h2 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .achievements-section h2 {
+    font-size: 45px;
+    line-height: 45px;
+    margin-bottom: 50px;
+  }
+  .achievement-card {
+    padding: 30px;
+  }
+}
