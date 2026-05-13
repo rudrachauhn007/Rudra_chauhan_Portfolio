@@ -53,7 +53,7 @@ const SocialIcons = () => {
       };
     });
   }, []);
- const resumeLink = "public/rudra.pdf";
+ const resumeLink = "https://drive.google.com/file/d/1XnNStPwejqCAvARRBnViVGEQaHf9X-GP/view?usp=sharing";
   return (
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
