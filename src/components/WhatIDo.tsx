@@ -148,8 +148,6 @@ function handleClick(container: HTMLDivElement) {
   container.classList.remove("what-sibling");
 
   if (container.parentElement) {
-    const siblings = Array.from(container.parentElement.children);
-
    ;
   }
 }
