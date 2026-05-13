@@ -53,7 +53,7 @@ const SocialIcons = () => {
       };
     });
   }, []);
-
+ const resumeLink = "https://drive.google.com/file/d/1PLjhDK_ZEEaWqq1OZu1KTiA5TN8qtgKy/view?usp=sharing";
   return (
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
@@ -79,7 +79,7 @@ const SocialIcons = () => {
       </div>
       <a
         className="resume-button"
-        href="/rudra.pdf"
+        href={resumeLink}
         target="_blank"
         rel="noreferrer"
       >
